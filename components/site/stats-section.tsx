@@ -1,9 +1,11 @@
 "use client";
 
+import { statsSectionCopy } from "./copy/stats-section";
 import { useSiteLocale } from "./locale-provider";
 
 export function StatsSection() {
-  const { copy } = useSiteLocale();
+  const { locale } = useSiteLocale();
+  const copy = statsSectionCopy[locale];
 
   return (
     <section

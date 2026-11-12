@@ -1,9 +1,11 @@
 "use client";
 
+import { processSectionCopy } from "./copy/process-section";
 import { useSiteLocale } from "./locale-provider";
 
 export function ProcessSection() {
-  const { copy } = useSiteLocale();
+  const { locale } = useSiteLocale();
+  const copy = processSectionCopy[locale];
 
   return (
     <section

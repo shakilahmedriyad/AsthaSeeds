@@ -1,14 +1,19 @@
 "use client";
 
 import { Sprout } from "lucide-react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { brandCopy } from "./copy/brand";
 import { useSiteLocale } from "./locale-provider";
 
 export function Brand({ light = false }: { light?: boolean }) {
-  const { copy } = useSiteLocale();
+  const { locale } = useSiteLocale();
+  const copy = brandCopy[locale];
+  const isHomePage = usePathname() === "/";
 
   return (
-    <a
-      href="#home"
+    <Link
+      href={isHomePage ? "#home" : "/"}
       className="inline-flex items-center gap-2.5"
       aria-label={copy.brand.homeLabel}
     >
@@ -31,6 +36,6 @@ export function Brand({ light = false }: { light?: boolean }) {
           {copy.brand.tagline}
         </span>
       </span>
-    </a>
+    </Link>
   );
 }

@@ -1,10 +1,12 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { languageSwitcherCopy } from "./copy/language-switcher";
 import { useSiteLocale } from "./locale-provider";
 
 export function LanguageSwitcher() {
-  const { locale, setLocale, copy } = useSiteLocale();
+  const { locale, setLocale } = useSiteLocale();
+  const copy = languageSwitcherCopy[locale];
 
   return (
     <div

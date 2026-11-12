@@ -1,10 +1,12 @@
 "use client";
 
 import { Quote } from "lucide-react";
+import { testimonialsSectionCopy } from "./copy/testimonials-section";
 import { useSiteLocale } from "./locale-provider";
 
 export function TestimonialsSection() {
-  const { copy } = useSiteLocale();
+  const { locale } = useSiteLocale();
+  const copy = testimonialsSectionCopy[locale];
 
   return (
     <section

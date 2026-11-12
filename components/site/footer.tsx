@@ -1,11 +1,16 @@
 "use client";
 
 import { MapPin, Phone, Truck, UsersRound } from "lucide-react";
+import { usePathname } from "next/navigation";
 import { Brand } from "./brand";
+import { siteFooterCopy } from "./copy/site-footer";
 import { useSiteLocale } from "./locale-provider";
 
 export function SiteFooter() {
-  const { copy } = useSiteLocale();
+  const { locale } = useSiteLocale();
+  const copy = siteFooterCopy[locale];
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
 
   return (
     <footer className="motif motif-light bg-primary-deep px-5 text-primary-foreground sm:px-8">
@@ -22,22 +27,28 @@ export function SiteFooter() {
           </h2>
           <ul className="mt-4 space-y-2.5 text-sm text-white/70">
             <li>
-              <a className="hover:text-white" href="#home">
+              <a className="hover:text-white" href={isHomePage ? "#home" : "/"}>
                 {copy.navigation.home}
               </a>
             </li>
             <li>
-              <a className="hover:text-white" href="#about">
+              <a className="hover:text-white" href="/about">
                 {copy.navigation.about}
               </a>
             </li>
             <li>
-              <a className="hover:text-white" href="#products">
+              <a
+                className="hover:text-white"
+                href="/products"
+              >
                 {copy.navigation.products}
               </a>
             </li>
             <li>
-              <a className="hover:text-white" href="#contact">
+              <a
+                className="hover:text-white"
+                href="/contact"
+              >
                 {copy.navigation.contact}
               </a>
             </li>

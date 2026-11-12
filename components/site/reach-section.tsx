@@ -1,10 +1,12 @@
 "use client";
 
 import { Check, MapPin } from "lucide-react";
+import { reachSectionCopy } from "./copy/reach-section";
 import { useSiteLocale } from "./locale-provider";
 
 export function ReachSection() {
-  const { copy } = useSiteLocale();
+  const { locale } = useSiteLocale();
+  const copy = reachSectionCopy[locale];
 
   return (
     <section

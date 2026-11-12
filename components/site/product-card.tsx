@@ -1,10 +1,12 @@
 "use client";
 
 import { ArrowRight } from "lucide-react";
+import { productCardCopy } from "./copy/product-card";
 import { useSiteLocale } from "./locale-provider";
 
 export function ProductCard() {
-  const { copy } = useSiteLocale();
+  const { locale } = useSiteLocale();
+  const copy = productCardCopy[locale];
 
   return (
     <article className="group overflow-hidden rounded-xl border border-border/80 bg-card shadow-card transition-shadow hover:shadow-lift">

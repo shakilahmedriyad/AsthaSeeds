@@ -2,10 +2,12 @@
 
 import { ChevronRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { contactSectionCopy } from "./copy/contact-section";
 import { useSiteLocale } from "./locale-provider";
 
 export function ContactSection() {
-  const { copy } = useSiteLocale();
+  const { locale } = useSiteLocale();
+  const copy = contactSectionCopy[locale];
 
   return (
     <section

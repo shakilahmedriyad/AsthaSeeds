@@ -9,6 +9,7 @@ import {
   Tag,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+import { benefitsSectionCopy } from "./copy/benefits-section";
 import { useSiteLocale } from "./locale-provider";
 
 const benefitIcons: LucideIcon[] = [
@@ -21,7 +22,8 @@ const benefitIcons: LucideIcon[] = [
 ];
 
 export function BenefitsSection() {
-  const { copy } = useSiteLocale();
+  const { locale } = useSiteLocale();
+  const copy = benefitsSectionCopy[locale];
 
   return (
     <section

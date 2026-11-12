@@ -8,7 +8,9 @@ import {
   useSyncExternalStore,
   type ReactNode,
 } from "react";
-import { siteCopy, type SiteLocale } from "./copy";
+import { usePathname } from "next/navigation";
+import { siteMetadataCopy } from "./copy/site-metadata";
+import type { SiteLocale } from "./locale";
 
 const STORAGE_KEY = "shonali-seeds-language";
 const LOCALE_CHANGE_EVENT = "shonali-seeds-language-change";
@@ -46,12 +48,28 @@ type SiteLocaleContextValue = {
 const SiteLocaleContext = createContext<SiteLocaleContextValue | null>(null);
 
 export function SiteLocaleProvider({ children }: { children: ReactNode }) {
+  const pathname = usePathname();
   const locale = useSyncExternalStore(
     subscribeToLocale,
     getLocaleSnapshot,
     getServerLocaleSnapshot,
   );
-  const copy = siteCopy[locale];
+  const pageTitle =
+    pathname === "/about"
+      ? siteMetadataCopy[locale].about.pageTitle
+      : pathname === "/products"
+        ? siteMetadataCopy[locale].productsPage.pageTitle
+        : pathname === "/contact"
+          ? siteMetadataCopy[locale].contactPage.pageTitle
+          : siteMetadataCopy[locale].pageTitle;
+  const metaDescription =
+    pathname === "/about"
+      ? siteMetadataCopy[locale].about.metaDescription
+      : pathname === "/products"
+        ? siteMetadataCopy[locale].productsPage.metaDescription
+        : pathname === "/contact"
+          ? siteMetadataCopy[locale].contactPage.metaDescription
+          : siteMetadataCopy[locale].metaDescription;
 
   const setLocale = useCallback((nextLocale: SiteLocale) => {
     window.localStorage.setItem(STORAGE_KEY, nextLocale);
@@ -60,11 +78,11 @@ export function SiteLocaleProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     document.documentElement.lang = locale;
-    document.title = copy.pageTitle;
+    document.title = pageTitle;
     document
       .querySelector('meta[name="description"]')
-      ?.setAttribute("content", copy.metaDescription);
-  }, [copy.metaDescription, copy.pageTitle, locale]);
+      ?.setAttribute("content", metaDescription);
+  }, [locale, metaDescription, pageTitle]);
 
   return (
     <SiteLocaleContext.Provider value={{ locale, setLocale }}>
@@ -82,6 +100,5 @@ export function useSiteLocale() {
 
   return {
     ...context,
-    copy: siteCopy[context.locale],
   };
 }

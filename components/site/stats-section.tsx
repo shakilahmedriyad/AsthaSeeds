@@ -1,0 +1,25 @@
+"use client";
+
+import { useSiteLocale } from "./locale-provider";
+
+export function StatsSection() {
+  const { copy } = useSiteLocale();
+
+  return (
+    <section
+      aria-label={copy.stats.label}
+      className="border-b border-border/70 bg-card"
+    >
+      <div className="mx-auto grid max-w-6xl grid-cols-2 divide-x divide-y divide-border/70 sm:grid-cols-4 sm:divide-y-0">
+        {copy.stats.items.map((stat) => (
+          <div key={stat.label} className="px-5 py-6 text-center sm:py-7">
+            <p className="text-2xl font-semibold tracking-tight text-primary">
+              {stat.value}
+            </p>
+            <p className="mt-1 text-xs text-muted-foreground">{stat.label}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}

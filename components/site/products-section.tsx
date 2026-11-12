@@ -1,0 +1,36 @@
+"use client";
+
+import { ProductCard } from "./product-card";
+import { useSiteLocale } from "./locale-provider";
+
+export function ProductsSection() {
+  const { copy } = useSiteLocale();
+
+  return (
+    <section
+      id="products"
+      className="scroll-mt-24 bg-[#f2f0e7] px-5 py-20 sm:px-8 sm:py-24"
+      aria-labelledby="products-title"
+    >
+      <div className="mx-auto max-w-6xl">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
+            {copy.products.eyebrow}
+          </p>
+          <h2
+            id="products-title"
+            className="mt-3 text-3xl font-semibold tracking-tight sm:text-[2.1rem]"
+          >
+            {copy.products.title}
+          </h2>
+          <p className="mt-2 max-w-xl text-sm leading-6 text-muted-foreground">
+            {copy.products.description}
+          </p>
+        </div>
+        <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <ProductCard />
+        </div>
+      </div>
+    </section>
+  );
+}

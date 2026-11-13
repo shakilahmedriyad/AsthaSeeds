@@ -5,8 +5,8 @@ export const aboutIntroCopy = {
       breadcrumbHome: "প্রচ্ছদ",
       breadcrumbCurrent: "আমাদের সম্পর্কে",
       title: "আমাদের সম্পর্কে",
-      description:
-        "বিশ্বস্ত ও মান যাচাই করা বীজ নিয়ে বাংলাদেশের কৃষকের পাশে।",
+      companyName: "আস্থা সিডস লিমিটেড",
+      tagline: "বিশ্বের বীজ উদ্ভাবনকে যুক্ত করি স্থানীয় কৃষির অগ্রগতির সঙ্গে।",
     },
   },
   en: {
@@ -15,8 +15,8 @@ export const aboutIntroCopy = {
       breadcrumbHome: "Home",
       breadcrumbCurrent: "About Us",
       title: "About Us",
-      description:
-        "Standing with Bangladeshi farmers through trusted, quality-tested seed.",
+      companyName: "ASTHA SEEDS LIMITED",
+      tagline: "Connecting Global Seed Innovation with Local Agricultural Growth.",
     },
   },
 } as const;

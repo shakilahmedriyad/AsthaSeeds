@@ -7,9 +7,9 @@ import { SiteHeader } from "@/components/site/header";
 import { SiteLocaleProvider } from "@/components/site/locale-provider";
 
 export const metadata: Metadata = {
-  title: "আমাদের বীজ | শোনালী সিডস",
+  title: "আমাদের বীজ | আস্থা সিডস লিমিটেড",
   description:
-    "বাংলাদেশের কৃষকদের জন্য শোনালী সিডসের হাইব্রিড ভুট্টার বীজ দেখুন।",
+    "বাংলাদেশের কৃষকদের জন্য আস্থা সিডস লিমিটেডের বীজ দেখুন।",
 };
 
 export default function ProductsPage() {

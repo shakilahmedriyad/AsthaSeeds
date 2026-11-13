@@ -31,7 +31,7 @@ export function TestimonialsSection() {
               key={testimonial.name}
               className="flex flex-col rounded-xl border border-border/80 bg-card p-6 shadow-card"
             >
-              <Quote className="size-5 text-gold" aria-hidden="true" />
+              <Quote className="size-5 text-brand-accent" aria-hidden="true" />
               <blockquote className="mt-4 flex-1 text-sm leading-6 text-foreground/90">
                 “{testimonial.quote}”
               </blockquote>

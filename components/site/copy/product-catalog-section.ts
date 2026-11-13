@@ -10,7 +10,7 @@ export const productCatalogCopy = {
       clearSearch: "সব বীজ দেখুন",
       products: [
         {
-          name: "শোনালী মেইজ গোল্ড ১০১",
+          name: "আস্থা মেইজ গোল্ড ১০১",
           variety: "হাইব্রিড",
           description: "উজ্জ্বল হলুদ, বড় ও দানায় ভরা মোচা।",
           season: "রবি",
@@ -21,7 +21,7 @@ export const productCatalogCopy = {
             "https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=800&q=85",
         },
         {
-          name: "শোনালী মেইজ সুপার ২০২",
+          name: "আস্থা মেইজ সুপার ২০২",
           variety: "হাইব্রিড",
           description: "রবি ও খরিফ-১ মৌসুমে চাষের উপযোগী।",
           season: "রবি, খরিফ-১",
@@ -45,7 +45,7 @@ export const productCatalogCopy = {
       clearSearch: "Show all seeds",
       products: [
         {
-          name: "Shonali Maize Gold 101",
+          name: "Astha Maize Gold 101",
           variety: "Hybrid",
           description: "Big, well-filled cobs with bright golden-yellow grain.",
           season: "Rabi",
@@ -56,7 +56,7 @@ export const productCatalogCopy = {
             "https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=800&q=85",
         },
         {
-          name: "Shonali Maize Super 202",
+          name: "Astha Maize Super 202",
           variety: "Hybrid",
           description: "A dependable choice for Rabi and Kharif-1 seasons.",
           season: "Rabi, Kharif-1",

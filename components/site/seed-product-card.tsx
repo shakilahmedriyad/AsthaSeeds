@@ -25,7 +25,7 @@ export function SeedProductCard({ product }: { product: SeedProduct }) {
       <div className="flex flex-1 flex-col p-4">
         <div className="flex items-center gap-2 text-[0.68rem] font-semibold uppercase tracking-wide text-primary">
           <span>{details.category}</span>
-          <span className="rounded-full bg-gold-soft px-2 py-0.5 text-gold-foreground">
+          <span className="rounded-full bg-brand-accent-soft px-2 py-0.5 text-brand-accent">
             {product.variety}
           </span>
         </div>
@@ -89,7 +89,7 @@ export function SeedProductCard({ product }: { product: SeedProduct }) {
           <Button
             render={
               <a
-                href={`mailto:info@shonaliseeds.com.bd?subject=${encodeURIComponent(product.name)}`}
+                href={`mailto:md@asthaseeds.com?subject=${encodeURIComponent(product.name)}`}
               />
             }
             nativeButton={false}

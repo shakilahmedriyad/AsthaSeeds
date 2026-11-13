@@ -22,7 +22,7 @@ export function SiteFooter() {
           </p>
         </div>
         <div>
-          <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-gold">
+          <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-brand-accent-on-dark">
             {copy.footer.quickLinks}
           </h2>
           <ul className="mt-4 space-y-2.5 text-sm text-white/70">
@@ -55,30 +55,37 @@ export function SiteFooter() {
           </ul>
         </div>
         <div>
-          <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-gold">
+          <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-brand-accent-on-dark">
             {copy.footer.contact}
           </h2>
           <address className="mt-4 space-y-3 text-sm not-italic text-white/70">
             <p className="flex items-start gap-2.5">
               <MapPin
-                className="mt-0.5 size-4 shrink-0 text-gold"
+                className="mt-0.5 size-4 shrink-0 text-brand-accent-on-dark"
                 aria-hidden="true"
               />
-              {copy.footer.address}
+              {copy.footer.dhakaOffice}
+            </p>
+            <p className="flex items-start gap-2.5">
+              <MapPin
+                className="mt-0.5 size-4 shrink-0 text-brand-accent-on-dark"
+                aria-hidden="true"
+              />
+              {copy.footer.regionalOffice}
             </p>
             <a
-              href="tel:+8801711000000"
+              href="tel:+8801303808217"
               className="flex items-center gap-2.5 hover:text-white"
             >
-              <Phone className="size-4 text-gold" aria-hidden="true" />
-              +880 1711-000000
+              <Phone className="size-4 text-brand-accent-on-dark" aria-hidden="true" />
+              +880 1303 808217
             </a>
             <a
-              href="mailto:info@shonaliseeds.com.bd"
+              href="mailto:md@asthaseeds.com"
               className="flex items-center gap-2.5 hover:text-white"
             >
-              <UsersRound className="size-4 text-gold" aria-hidden="true" />
-              info@shonaliseeds.com.bd
+              <UsersRound className="size-4 text-brand-accent-on-dark" aria-hidden="true" />
+              md@asthaseeds.com
             </a>
           </address>
         </div>

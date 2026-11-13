@@ -44,7 +44,7 @@ export function ProductCatalogSection() {
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex flex-wrap items-center gap-2">
             <span className="inline-flex items-center gap-2 rounded-full bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground">
-              <span className="size-1.5 rounded-full bg-gold" />
+              <span className="size-1.5 rounded-full bg-brand-accent-on-dark" />
               {catalog.category}
             </span>
             <span className="rounded-full border border-border bg-card px-3 py-1.5 text-xs text-muted-foreground">

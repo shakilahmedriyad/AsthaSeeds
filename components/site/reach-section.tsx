@@ -33,7 +33,7 @@ export function ReachSection() {
             const served = index < 7;
 
             return (
-              <div
+              <article
                 key={division}
                 className={`rounded-lg border p-3.5 ${
                   served
@@ -54,14 +54,14 @@ export function ReachSection() {
                   ) : (
                     <>
                       <MapPin
-                        className="size-3.5 text-gold"
+                        className="size-3.5 text-brand-accent"
                         aria-hidden="true"
                       />
                       {copy.reach.comingSoon}
                     </>
                   )}
                 </p>
-              </div>
+              </article>
             );
           })}
         </div>

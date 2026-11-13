@@ -9,6 +9,7 @@ import { ReachSection } from "@/components/site/reach-section";
 import { TestimonialsSection } from "@/components/site/testimonials-section";
 import { ContactSection } from "@/components/site/contact-section";
 import { SiteFooter } from "@/components/site/footer";
+import { Reveal } from "@/components/site/reveal";
 
 export default function Home() {
   return (
@@ -16,13 +17,27 @@ export default function Home() {
       <SiteHeader />
       <main>
         <HeroSection />
-        <StatsSection />
-        <BenefitsSection />
-        <ProductsSection />
-        <ProcessSection />
-        <ReachSection />
-        <TestimonialsSection />
-        <ContactSection />
+        <Reveal>
+          <StatsSection />
+        </Reveal>
+        <Reveal>
+          <BenefitsSection />
+        </Reveal>
+        <Reveal>
+          <ProductsSection />
+        </Reveal>
+        <Reveal>
+          <ProcessSection />
+        </Reveal>
+        <Reveal>
+          <ReachSection />
+        </Reveal>
+        <Reveal>
+          <TestimonialsSection />
+        </Reveal>
+        <Reveal>
+          <ContactSection />
+        </Reveal>
       </main>
       <SiteFooter />
     </SiteLocaleProvider>

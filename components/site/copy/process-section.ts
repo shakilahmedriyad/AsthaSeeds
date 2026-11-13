@@ -2,24 +2,25 @@ export const processSectionCopy = {
   bn: {
     process: {
       eyebrow: "আমাদের কাজের ধারা",
-      title: "আমাদের মাঠ থেকে আপনার মাঠে।",
+      title: "বিদেশের বীজ সরবরাহকারী থেকে স্থানীয় কৃষকের কাছে।",
       items: [
         {
           number: "০১",
-          title: "যত্নে বীজ বাছাই",
+          title: "আন্তর্জাতিক উৎস থেকে সংগ্রহ",
           description:
-            "মানসম্মত বীজ বেছে নিয়ে স্থানীয় চাষের পরিবেশে পরীক্ষা করি।",
+            "প্রতিষ্ঠিত বিদেশি বীজ কোম্পানির সঙ্গে কাজ করে মানসম্মত বীজ সংগ্রহ করি।",
         },
         {
           number: "০২",
-          title: "পরীক্ষা ও প্যাকেটজাত",
+          title: "স্থানীয় বাজারে পরিচিতি",
           description:
-            "অঙ্কুরোদ্গম ও বিশুদ্ধতা যাচাই করে প্রতিটি বীজ সিল করা প্যাকেটে ভরি।",
+            "বাংলাদেশের ডিলার ও কৃষকদের কাছে বিভিন্ন ফসলের বীজ পৌঁছে দিই।",
         },
         {
           number: "০৩",
-          title: "স্থানীয় ডিলারের কাছে",
-          description: "চাষের মৌসুমে তৈরি বীজ পান আপনার এলাকার ডিলারের কাছেই।",
+          title: "ডিলার ও কৃষকের সঙ্গে অংশীদারত্ব",
+          description:
+            "স্থানীয় চাহিদার সঙ্গে মানানসই পণ্য পৌঁছে দিতে ডিলার ও কৃষকদের সঙ্গে কাজ করি।",
         },
       ],
     },
@@ -27,25 +28,25 @@ export const processSectionCopy = {
   en: {
     process: {
       eyebrow: "How we work",
-      title: "From our fields to yours.",
+      title: "From global suppliers to local farmers.",
       items: [
         {
           number: "01",
-          title: "Careful seed selection",
+          title: "Source internationally",
           description:
-            "We select quality seed and trial it in local growing conditions.",
+            "We work with established international seed companies to source quality seeds.",
         },
         {
           number: "02",
-          title: "Testing & packing",
+          title: "Introduce seeds locally",
           description:
-            "We check germination and purity, then seal every packet carefully.",
+            "We bring seed varieties for multiple crops to dealers and farmers in Bangladesh.",
         },
         {
           number: "03",
-          title: "To your local dealer",
+          title: "Work with local partners",
           description:
-            "Find your seed through a local dealer, ready for the season.",
+            "We work with local dealers and farmers to make seed varieties available.",
         },
       ],
     },

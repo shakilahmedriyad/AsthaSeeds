@@ -30,7 +30,7 @@ export function ProcessSection() {
               key={step.number}
               className="rounded-xl border border-border/80 bg-card p-6 shadow-card"
             >
-              <span className="text-3xl font-semibold tracking-tight text-gold">
+              <span className="text-3xl font-semibold tracking-tight text-brand-accent">
                 {step.number}
               </span>
               <h3 className="mt-3 text-base font-semibold">{step.title}</h3>

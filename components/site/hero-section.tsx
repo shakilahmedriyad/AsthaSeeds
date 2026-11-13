@@ -89,13 +89,13 @@ export function HeroSection() {
               <div className="mx-auto flex min-h-135 max-w-6xl items-center px-5 py-20 sm:px-8 sm:py-24">
                 <div className="max-w-2xl text-primary-foreground">
                   <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-primary-deep/30 px-3 py-1.5 text-xs font-medium tracking-wide text-white/95">
-                    <span className="size-1.5 rounded-full bg-gold" />
+                    <span className="size-1.5 rounded-full bg-brand-accent-on-dark" />
                     {slide.badge}
                   </span>
                   <h1 className="mt-6 max-w-xl text-4xl font-semibold leading-tight tracking-[-0.02em] sm:text-5xl md:text-[3.55rem]">
                     {slide.title}
                   </h1>
-                  <p className="mt-4 font-bn text-lg text-gold sm:text-xl">
+                  <p className="mt-4 font-bn text-lg text-brand-accent-on-dark sm:text-xl">
                     {slide.subtitle}
                   </p>
                   <p className="mt-4 max-w-lg text-base leading-7 text-white/80">
@@ -103,9 +103,9 @@ export function HeroSection() {
                   </p>
                   <div className="mt-7 flex flex-wrap gap-3">
                     <Button
-                      render={<a href="/products" />}
+                      render={<a href="#products" />}
                       nativeButton={false}
-                      className="h-11 rounded-lg bg-gold px-5 text-gold-foreground shadow-soft hover:bg-gold/90"
+                      className="h-11 rounded-lg bg-brand-accent px-5 text-brand-accent-foreground shadow-soft hover:bg-brand-accent/90"
                     >
                       {copy.hero.viewSeed} <ArrowRight aria-hidden="true" />
                     </Button>
@@ -143,7 +143,7 @@ export function HeroSection() {
                 onClick={() => api?.scrollTo(index)}
                 className={`h-2.5 min-h-2.5 w-7 rounded-full p-0 ${
                   activeSlide === index
-                    ? "bg-gold hover:bg-gold/90"
+                    ? "bg-brand-accent-on-dark hover:bg-brand-accent-on-dark/90"
                     : "bg-white/45 hover:bg-white/75"
                 }`}
               />

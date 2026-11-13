@@ -4,11 +4,13 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { ProductCard } from "./product-card";
 import { productsSectionCopy } from "./copy/products-section";
+import { productCardCopy } from "./copy/product-card";
 import { useSiteLocale } from "./locale-provider";
 
 export function ProductsSection() {
   const { locale } = useSiteLocale();
   const copy = productsSectionCopy[locale];
+  const products = productCardCopy[locale].products;
 
   return (
     <section
@@ -33,15 +35,21 @@ export function ProductsSection() {
             </p>
           </div>
           <Link
-            href="/products"
+            href="/contact"
             className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-card px-3 py-2 text-sm font-medium text-primary transition-colors hover:bg-secondary"
           >
             {copy.products.seeAll}
             <ArrowRight className="size-4" aria-hidden="true" />
           </Link>
         </div>
-        <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <ProductCard />
+        <div className="mt-8 grid gap-5 sm:grid-cols-2">
+          {products.items.map((product) => (
+            <ProductCard
+              key={product.category}
+              product={product}
+              comingSoonLabel={products.comingSoon}
+            />
+          ))}
         </div>
       </div>
     </section>

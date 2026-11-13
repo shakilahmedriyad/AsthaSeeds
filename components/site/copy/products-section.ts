@@ -2,19 +2,19 @@ export const productsSectionCopy = {
   bn: {
     products: {
       eyebrow: "আমাদের বীজ",
-      title: "এখন থাকছে ভুট্টার বীজ।",
+      title: "বিভিন্ন ফসলের বীজ, শিগগিরই আসছে।",
       description:
-        "স্থানীয় মাঠের উপযোগী করে বাছাই করা আমাদের পরিচিত ভুট্টার বীজ—যত্নে প্যাকেটজাত।",
-      seeAll: "সব বীজ দেখুন",
+        "আন্তর্জাতিক বীজ সরবরাহকারীদের কাছ থেকে মানসম্মত বীজ এনে বাংলাদেশের ডিলার ও কৃষকদের কাছে পৌঁছে দিই।",
+      seeAll: "বীজের খোঁজ নিন",
     },
   },
   en: {
     products: {
       eyebrow: "Our seed",
-      title: "Maize seed, for now.",
+      title: "Seeds for more crops, coming soon.",
       description:
-        "Our trusted maize seed is selected for local fields and packed with care.",
-      seeAll: "See all seeds",
+        "We source quality seeds from international suppliers and bring them to dealers and farmers in Bangladesh.",
+      seeAll: "Ask about seeds",
     },
   },
 } as const;

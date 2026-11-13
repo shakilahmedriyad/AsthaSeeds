@@ -25,15 +25,20 @@ export function AboutIntroSection() {
           <ChevronRight className="size-3.5" aria-hidden="true" />
           <span aria-current="page">{copy.about.breadcrumbCurrent}</span>
         </nav>
-        <h1
-          id="about-page-title"
-          className="mt-2 text-3xl font-semibold tracking-tight text-primary-deep sm:text-4xl"
-        >
-          {copy.about.title}
-        </h1>
-        <p className="mt-2 max-w-2xl text-sm leading-6 text-muted-foreground">
-          {copy.about.description}
-        </p>
+        <div className="mt-8 max-w-3xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
+            {copy.about.companyName}
+          </p>
+          <h1
+            id="about-page-title"
+            className="mt-2 text-3xl font-semibold tracking-tight text-primary-deep sm:text-4xl"
+          >
+            {copy.about.title}
+          </h1>
+          <p className="mt-3 text-lg font-medium leading-7 text-foreground sm:text-xl sm:leading-8">
+            {copy.about.tagline}
+          </p>
+        </div>
       </div>
     </section>
   );

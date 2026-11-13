@@ -41,14 +41,14 @@ export function ContactMethodsSection() {
 
           <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
             <a
-              href="tel:+8801711000000"
+              href="tel:+8801303808217"
               className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-primary px-4 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
             >
               <Phone className="size-4" aria-hidden="true" />
               {contact.phoneTitle}
             </a>
             <a
-              href="https://wa.me/8801711000000"
+              href="https://wa.me/8801303808217"
               target="_blank"
               rel="noreferrer"
               className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-whatsapp px-4 py-3 text-sm font-medium text-whatsapp-foreground transition-opacity hover:opacity-90"
@@ -84,11 +84,7 @@ export function ContactMethodsSection() {
         </div>
 
         <div className="grid gap-3 sm:grid-cols-2">
-          <ContactCard
-            icon={MapPin}
-            title={contact.officeTitle}
-            className="sm:col-span-2"
-          >
+          <ContactCard icon={MapPin} title={contact.officeTitle}>
             <a
               href={`https://maps.google.com/?q=${encodeURIComponent(contact.address)}`}
               target="_blank"
@@ -99,34 +95,36 @@ export function ContactMethodsSection() {
             </a>
           </ContactCard>
 
+          <ContactCard icon={MapPin} title={contact.regionalOfficeTitle}>
+            <a
+              href={`https://maps.google.com/?q=${encodeURIComponent(contact.regionalAddress)}`}
+              target="_blank"
+              rel="noreferrer"
+              className="text-sm leading-6 text-muted-foreground transition-colors hover:text-primary"
+            >
+              {contact.regionalAddress}
+            </a>
+          </ContactCard>
+
           <ContactCard icon={Phone} title={contact.phoneTitle}>
-            <div className="flex flex-col gap-1.5">
-              {contact.phones.map((phone, index) => (
-                <a
-                  key={phone}
-                  href={
-                    index === 0
-                      ? "tel:+8801711000000"
-                      : "tel:+8801811000000"
-                  }
-                  dir="ltr"
-                  className="w-fit text-sm font-semibold text-primary hover:underline"
-                >
-                  {phone}
-                </a>
-              ))}
-            </div>
+            <a
+              href="tel:+8801303808217"
+              dir="ltr"
+              className="w-fit text-sm font-semibold text-primary hover:underline"
+            >
+              {contact.phone}
+            </a>
           </ContactCard>
 
           <ContactCard icon={MessageCircle} title={contact.whatsappTitle}>
             <a
-              href="https://wa.me/8801711000000"
+              href="https://wa.me/8801303808217"
               target="_blank"
               rel="noreferrer"
               dir="ltr"
               className="text-sm font-semibold text-primary hover:underline"
             >
-              {contact.phones[0]}
+              {contact.phone}
             </a>
           </ContactCard>
 

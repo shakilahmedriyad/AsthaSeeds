@@ -1,6 +1,7 @@
 "use client";
 
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Brand } from "./brand";
@@ -41,41 +42,41 @@ export function SiteHeader() {
           aria-label={navigation.label}
           className="hidden items-center gap-8 text-sm text-muted-foreground md:flex"
         >
-          <a
+          <Link
             className={homeClass}
             href={homeHref}
             aria-current={isHomePage ? "page" : undefined}
           >
             {navigation.home}
-          </a>
-          <a
+          </Link>
+          <Link
             className={aboutClass}
             href={aboutHref}
             aria-current={isAboutPage ? "page" : undefined}
           >
             {navigation.about}
-          </a>
-          <a
+          </Link>
+          <Link
             className={productsClass}
             href={productsHref}
             aria-current={isProductsPage ? "page" : undefined}
           >
             {navigation.products}
-          </a>
-          <a
+          </Link>
+          <Link
             className={contactClass}
             href={contactHref}
             aria-current={isContactPage ? "page" : undefined}
           >
             {navigation.contact}
-          </a>
+          </Link>
         </nav>
         <div className="flex items-center gap-2 sm:gap-3">
           <LanguageSwitcher />
           <Button
-            render={<a href={contactHref} />}
+            render={<Link href={contactHref} />}
             nativeButton={false}
-            className="hidden h-10 rounded-full bg-gold px-5 text-sm text-gold-foreground shadow-soft hover:bg-gold/90 sm:inline-flex"
+            className="hidden h-10 rounded-full bg-brand-accent px-5 text-sm text-brand-accent-foreground shadow-soft hover:bg-brand-accent/90 sm:inline-flex"
           >
             {navigation.getInTouch} <ArrowRight aria-hidden="true" />
           </Button>
@@ -85,34 +86,34 @@ export function SiteHeader() {
         aria-label={navigation.label}
         className="flex items-center justify-center gap-5 border-t border-border/70 px-4 py-2.5 text-xs text-muted-foreground md:hidden"
       >
-        <a
+        <Link
           className={homeClass}
           href={homeHref}
           aria-current={isHomePage ? "page" : undefined}
         >
           {navigation.home}
-        </a>
-        <a
+        </Link>
+        <Link
           className={aboutClass}
           href={aboutHref}
           aria-current={isAboutPage ? "page" : undefined}
         >
           {navigation.about}
-        </a>
-        <a
+        </Link>
+        <Link
           className={productsClass}
           href={productsHref}
           aria-current={isProductsPage ? "page" : undefined}
         >
           {navigation.products}
-        </a>
-        <a
+        </Link>
+        <Link
           className={contactClass}
           href={contactHref}
           aria-current={isContactPage ? "page" : undefined}
         >
           {navigation.contact}
-        </a>
+        </Link>
       </nav>
     </header>
   );

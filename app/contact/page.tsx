@@ -6,9 +6,9 @@ import { SiteHeader } from "@/components/site/header";
 import { SiteLocaleProvider } from "@/components/site/locale-provider";
 
 export const metadata: Metadata = {
-  title: "যোগাযোগ করুন | শোনালী সিডস",
+  title: "যোগাযোগ করুন | আস্থা সিডস লিমিটেড",
   description:
-    "ফোন, হোয়াটসঅ্যাপ বা ইমেইলে শোনালী সিডসের সঙ্গে যোগাযোগ করুন।",
+    "ফোন, হোয়াটসঅ্যাপ বা ইমেইলে আস্থা সিডস লিমিটেডের সঙ্গে যোগাযোগ করুন।",
 };
 
 export default function ContactPage() {

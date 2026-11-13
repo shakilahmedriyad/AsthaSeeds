@@ -17,7 +17,7 @@ export function ContactSection() {
     >
       <div className="mx-auto flex max-w-6xl flex-col gap-7 md:flex-row md:items-center md:justify-between">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-gold">
+          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand-accent-on-dark">
             {copy.contact.eyebrow}
           </p>
           <h2
@@ -32,14 +32,14 @@ export function ContactSection() {
         </div>
         <div className="flex flex-wrap gap-3">
           <Button
-            render={<a href="tel:+8801711000000" />}
+            render={<a href="tel:+8801303808217" />}
             nativeButton={false}
-            className="h-10 rounded-lg bg-gold px-4 text-gold-foreground hover:bg-gold/90"
+            className="h-10 rounded-lg bg-brand-accent px-4 text-brand-accent-foreground hover:bg-brand-accent/90"
           >
             <Phone aria-hidden="true" /> {copy.contact.call}
           </Button>
           <Button
-            render={<a href="mailto:info@shonaliseeds.com.bd" />}
+            render={<a href="mailto:md@asthaseeds.com" />}
             nativeButton={false}
             variant="outline"
             className="h-10 rounded-lg border-white/30 bg-transparent px-4 text-white hover:bg-white/10 hover:text-white"

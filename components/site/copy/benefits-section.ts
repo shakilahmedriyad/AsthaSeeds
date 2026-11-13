@@ -1,79 +1,50 @@
 export const benefitsSectionCopy = {
   bn: {
     benefits: {
-      eyebrow: "কৃষকরা কেন আমাদের বেছে নেন",
-      title: "ভালো বীজেই ভালো ফসলের শুরু।",
+      eyebrow: "আমাদের ব্যবসায়িক মডেল",
+      title: "বিশ্বস্ত উৎস থেকে বাংলাদেশের কৃষকের কাছে।",
       description:
-        "মাঠ থেকে বীজের প্যাকেট—আপনার ফসলের জন্য দরকারি প্রতিটি বিষয়ে আমরা যত্ন নিই।",
+        "আন্তর্জাতিক বীজ সরবরাহকারীদের সঙ্গে কাজ করে মানসম্মত বীজ স্থানীয় ডিলার ও কৃষকদের কাছে পৌঁছে দিই।",
       items: [
         {
-          title: "উচ্চ অঙ্কুরোদ্গম ক্ষমতা",
+          title: "আন্তর্জাতিক বীজ সরবরাহকারী",
           description:
-            "প্যাকেট করার আগে প্রতিটি বীজের অঙ্কুরোদ্গম ক্ষমতা পরীক্ষা করা হয়।",
+            "বিদেশের প্রতিষ্ঠিত বীজ কোম্পানি থেকে মানসম্মত জাত সংগ্রহ করি।",
         },
         {
-          title: "বিশুদ্ধ বীজের নিশ্চয়তা",
+          title: "বিভিন্ন ফসলের বীজ",
           description:
-            "যত্নে বাছাই করা বীজ—অন্য বীজের মিশ্রণ বা অনাকাঙ্ক্ষিত উপাদান ছাড়া।",
+            "ভুট্টা, ধান, সবজি, পাট ও অন্যান্য গুরুত্বপূর্ণ ফসলের বীজ নিয়ে কাজ করি।",
         },
         {
-          title: "স্থানীয় মাঠে পরীক্ষিত",
+          title: "ডিলার ও কৃষকের কাছে সরবরাহ",
           description:
-            "বাংলাদেশের বাস্তব চাষের পরিবেশে বাছাই ও পরীক্ষা করা হয়েছে।",
-        },
-        {
-          title: "ন্যায্য ও সাশ্রয়ী দাম",
-          description:
-            "কৃষক ও স্থানীয় ডিলার—সবার কথা ভেবে রাখা সহজ ও ন্যায্য দাম।",
-        },
-        {
-          title: "মৌসুমের আগেই সরবরাহ",
-          description:
-            "চাষের মৌসুম শুরুর আগেই ডিলারের কাছে বীজ পৌঁছে দেওয়ার চেষ্টা করি।",
-        },
-        {
-          title: "প্রয়োজনে পাশে আছি",
-          description: "পরামর্শের জন্য আমাদের মাঠকর্মীর সঙ্গে সরাসরি কথা বলুন।",
+            "আমাদের স্থানীয় ডিলার নেটওয়ার্কের মাধ্যমে বীজ কৃষকদের কাছে পৌঁছে দিই।",
         },
       ],
     },
   },
   en: {
     benefits: {
-      eyebrow: "Why farmers choose us",
-      title: "Good seed makes all the difference.",
+      eyebrow: "How we work",
+      title: "From trusted suppliers to local farmers.",
       description:
-        "From the field to the packet, we pay attention to the details that matter to your harvest.",
+        "We work with international seed suppliers to bring quality seeds to local dealers and farmers.",
       items: [
         {
-          title: "High germination",
+          title: "International seed suppliers",
           description:
-            "Every lot is germination-tested before it is carefully packed.",
+            "We source quality varieties from established seed companies abroad.",
         },
         {
-          title: "Purity you can trust",
+          title: "Seeds for multiple crops",
           description:
-            "Carefully graded seed, with no mixing or unwanted seed.",
+            "Our interests include corn, rice, vegetables, jute and other important crops.",
         },
         {
-          title: "Tested for local fields",
+          title: "Local dealer and farmer network",
           description:
-            "Selected and checked in real growing conditions across Bangladesh.",
-        },
-        {
-          title: "Fair, honest pricing",
-          description:
-            "Straightforward prices that work for farmers and local dealers.",
-        },
-        {
-          title: "Ready when you need it",
-          description:
-            "Reliable stock reaches our dealers ahead of the season.",
-        },
-        {
-          title: "A real person to call",
-          description:
-            "Get practical advice from our field team whenever you need it.",
+            "We distribute seeds to farmers through our network of local dealers.",
         },
       ],
     },

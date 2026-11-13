@@ -10,27 +10,25 @@ export const heroCopy = {
       next: "পরের ছবি",
       slides: [
         {
-          badge: "২০১০ সাল থেকে · বাংলাদেশের বীজ প্রতিষ্ঠান",
-          title: "ভুট্টা চাষে ভালো ফলনের প্রথম ধাপ।",
-          subtitle: "বাংলাদেশের মাটি ও মৌসুমের উপযোগী বীজ",
+          badge: "ধানের মাঠ · বাংলাদেশের কৃষি",
+          title: "ধান চাষে নতুন সম্ভাবনার পথে।",
+          subtitle: "বিশ্বস্ত সরবরাহকারীদের মানসম্মত বীজ",
           description:
-            "বাংলাদেশের মাটি ও মৌসুমের উপযোগী, যত্নে বাছাই করা উচ্চ অঙ্কুরোদ্গম ক্ষমতার ভুট্টার বীজ।",
-          image:
-            "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2200&q=85",
-          imageDescription: "সবুজ শস্যক্ষেত",
+            "আন্তর্জাতিক বীজ সরবরাহকারীদের কাছ থেকে মানসম্মত জাত সংগ্রহ করে বাংলাদেশের ডিলার ও কৃষকদের কাছে পৌঁছে দিই।",
+          image: "/rice.avif",
+          imageDescription: "সবুজ ধানক্ষেত ও দূরের পাহাড়",
         },
         {
-          badge: "যত্নে বাছাই · মান যাচাই করা",
-          title: "আপনার মাঠের জন্য বাছাই করা ভালো বীজ।",
-          subtitle: "ভালো বীজ। ভালো ফসল।",
+          badge: "ভুট্টা · ফসলের সম্ভাবনা",
+          title: "ভুট্টা চাষে নতুন সম্ভাবনার পথে।",
+          subtitle: "আন্তর্জাতিক সরবরাহ থেকে স্থানীয় বাজারে",
           description:
-            "প্রতিটি বীজ আমরা যত্নে বাছাই ও পরীক্ষা করি—যাতে আপনি নিশ্চিন্তে চাষ শুরু করতে পারেন।",
-          image:
-            "https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=2200&q=85",
-          imageDescription: "তাজা ভুট্টার মোচা",
+            "ভুট্টাসহ নানা ফসল ও সবজির মানসম্মত বীজ ডিলার ও কৃষকদের কাছে পৌঁছে দেওয়াই আমাদের লক্ষ্য।",
+          image: "/corn.jpg",
+          imageDescription: "গাছে পাকা সোনালি ভুট্টার মোচা",
         },
       ],
-      viewSeed: "ভুট্টার বীজ দেখুন",
+      viewSeed: "আমাদের বীজ দেখুন",
       talkToTeam: "আমাদের সঙ্গে কথা বলুন",
       aboutLink: "আমাদের সম্পর্কে আরও জানুন",
     },
@@ -46,27 +44,25 @@ export const heroCopy = {
       next: "Next slide",
       slides: [
         {
-          badge: "Seed supplier since 2010 · Bangladesh",
-          title: "Quality maize seeds for a better harvest.",
-          subtitle: "Selected for Bangladeshi fields and seasons",
+          badge: "Rice fields · Bangladesh agriculture",
+          title: "New possibilities for paddy farming.",
+          subtitle: "Quality seed from trusted international suppliers",
           description:
-            "Reliable, high-germination maize seed selected for Bangladeshi soil, seasons and the people who grow our food.",
-          image:
-            "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2200&q=85",
-          imageDescription: "Green crop fields",
+            "We source quality varieties from international seed suppliers and bring them to dealers and farmers across Bangladesh.",
+          image: "/rice.avif",
+          imageDescription: "A green paddy field with mountains in the distance",
         },
         {
-          badge: "Carefully selected · Quality tested",
-          title: "Good seed, chosen for your fields.",
-          subtitle: "Good seed. Better harvest.",
+          badge: "Corn · Crop potential",
+          title: "New possibilities for corn farming.",
+          subtitle: "From international suppliers to local markets",
           description:
-            "We select and test every seed with care, so you can begin the growing season with confidence.",
-          image:
-            "https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=2200&q=85",
-          imageDescription: "Fresh maize cobs",
+            "Our goal is to make quality seeds for crops and vegetables available to dealers and farmers.",
+          image: "/corn.jpg",
+          imageDescription: "Ripe golden corn cobs growing on the stalk",
         },
       ],
-      viewSeed: "View our maize seed",
+      viewSeed: "Explore our seeds",
       talkToTeam: "Talk to our team",
       aboutLink: "A little more about us",
     },

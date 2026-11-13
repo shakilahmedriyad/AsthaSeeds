@@ -1,24 +1,18 @@
 "use client";
 
 import {
-  FlaskConical,
-  Headset,
-  PackageCheck,
-  ShieldCheck,
+  Globe2,
+  Store,
   Sprout,
-  Tag,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { benefitsSectionCopy } from "./copy/benefits-section";
 import { useSiteLocale } from "./locale-provider";
 
 const benefitIcons: LucideIcon[] = [
+  Globe2,
   Sprout,
-  ShieldCheck,
-  FlaskConical,
-  Tag,
-  PackageCheck,
-  Headset,
+  Store,
 ];
 
 export function BenefitsSection() {

@@ -1,44 +1,38 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
-import { productCardCopy } from "./copy/product-card";
-import { useSiteLocale } from "./locale-provider";
+import Image from "next/image";
+import type { HomepageProduct } from "./copy/product-card";
 
-export function ProductCard() {
-  const { locale } = useSiteLocale();
-  const copy = productCardCopy[locale];
-
+export function ProductCard({
+  product,
+  comingSoonLabel,
+}: {
+  product: HomepageProduct;
+  comingSoonLabel: string;
+}) {
   return (
     <article className="group overflow-hidden rounded-xl border border-border/80 bg-card shadow-card transition-shadow hover:shadow-lift">
-      <div
-        role="img"
-        aria-label={copy.products.imageDescription}
-        className="h-48 bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=800&q=85')",
-        }}
-      />
-      <div className="p-4">
-        <div className="flex items-center gap-2 text-[0.68rem] font-semibold uppercase tracking-wide text-primary">
-          <span>{copy.products.category}</span>
-          <span className="rounded-full bg-gold-soft px-2 py-0.5 text-gold-foreground">
-            {copy.products.hybrid}
+      <div className="relative aspect-[16/10] overflow-hidden bg-secondary">
+        <Image
+          src={product.imageSrc}
+          alt={product.imageDescription}
+          fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 560px"
+          className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+        />
+        <div className="absolute inset-0 flex items-center justify-center bg-primary-deep/10">
+          <span className="rounded-full border border-white/40 bg-primary-deep/90 px-5 py-2.5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(0,0,0,0.35)] backdrop-blur-sm">
+            {comingSoonLabel}
           </span>
         </div>
-        <h3 className="mt-2 text-base font-semibold leading-snug">
-          {copy.products.productName}
-        </h3>
-        <p className="mt-2 min-h-12 text-sm leading-6 text-muted-foreground">
-          {copy.products.productDescription}
+      </div>
+      <div className="p-5">
+        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-primary">
+          {product.category}
         </p>
-        <a
-          href="#contact"
-          className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-colors group-hover:text-primary-deep"
-        >
-          {copy.products.details}
-          <ArrowRight className="size-3.5" aria-hidden="true" />
-        </a>
+        <h3 className="mt-2 text-lg font-semibold leading-snug">
+          {product.name}
+        </h3>
       </div>
     </article>
   );

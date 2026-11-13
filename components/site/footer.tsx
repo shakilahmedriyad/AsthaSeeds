@@ -43,6 +43,11 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
+              <Link className="hover:text-white" href="/gallery">
+                {copy.navigation.gallery}
+              </Link>
+            </li>
+            <li>
               <Link className="hover:text-white" href="/contact">
                 {copy.navigation.contact}
               </Link>
@@ -76,11 +81,11 @@ export function SiteFooter() {
               +880 1303 808217
             </a>
             <a
-              href="mailto:md@asthaseeds.com"
+              href="mailto:info@asthaseeds.com"
               className="flex items-center gap-2.5 hover:text-white"
             >
               <UsersRound className="size-4 text-brand-accent-on-dark" aria-hidden="true" />
-              md@asthaseeds.com
+              info@asthaseeds.com
             </a>
           </address>
         </div>

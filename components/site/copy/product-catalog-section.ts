@@ -10,7 +10,7 @@ export const productCatalogCopy = {
       clearSearch: "সব বীজ দেখুন",
       products: [
         {
-          name: "আস্থা মেইজ গোল্ড ১০১",
+          name: "Astha-55",
           category: "ভুট্টা",
           variety: "হাইব্রিড",
           description: "উজ্জ্বল হলুদ, বড় ও দানায় ভরা মোচা।",
@@ -21,11 +21,11 @@ export const productCatalogCopy = {
           image: "/corn.jpg",
         },
         {
-          name: "আস্থা ধানের বীজ",
+          name: "Astha nobanna 29",
           category: "ধান",
           variety: "হাইব্রিড",
           description: "বাংলাদেশের কৃষকদের জন্য মানসম্মত ধানের বীজ।",
-          season: "রবি",
+          season: "রবি ও খরিফ",
           maturity: "১৩৫–১৪৫ দিন",
           pack: "১ কেজি",
           imageDescription: "সবুজ ধানক্ষেত",
@@ -45,7 +45,7 @@ export const productCatalogCopy = {
       clearSearch: "Show all seeds",
       products: [
         {
-          name: "Astha Maize Gold 101",
+          name: "Astha-55",
           category: "Corn",
           variety: "Hybrid",
           description: "Big, well-filled cobs with bright golden-yellow grain.",
@@ -56,11 +56,11 @@ export const productCatalogCopy = {
           image: "/corn.jpg",
         },
         {
-          name: "Astha Rice Seeds",
+          name: "Astha nobanna 29",
           category: "Rice",
           variety: "Hybrid",
           description: "Quality rice seed for farmers across Bangladesh.",
-          season: "Rabi",
+          season: "Rabi and Kharif",
           maturity: "135–145 days",
           pack: "1 kg",
           imageDescription: "Green rice paddy field",

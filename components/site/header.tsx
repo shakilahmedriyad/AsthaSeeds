@@ -26,10 +26,12 @@ export function SiteHeader() {
   const isHomePage = pathname === "/";
   const isAboutPage = pathname === "/about";
   const isProductsPage = pathname === "/products";
+  const isGalleryPage = pathname === "/gallery";
   const isContactPage = pathname === "/contact";
   const homeHref = isHomePage ? "#home" : "/";
   const aboutHref = "/about";
   const productsHref = "/products";
+  const galleryHref = "/gallery";
   const contactHref = "/contact";
   const homeClass = isHomePage
     ? "font-medium text-primary"
@@ -38,6 +40,9 @@ export function SiteHeader() {
     ? "font-medium text-primary"
     : "transition-colors hover:text-primary";
   const productsClass = isProductsPage
+    ? "font-medium text-primary"
+    : "transition-colors hover:text-primary";
+  const galleryClass = isGalleryPage
     ? "font-medium text-primary"
     : "transition-colors hover:text-primary";
   const contactClass = isContactPage
@@ -50,31 +55,38 @@ export function SiteHeader() {
         <Brand />
         <nav
           aria-label={navigation.label}
-          className="hidden items-center gap-8 text-sm text-muted-foreground md:flex"
+          className="hidden items-center gap-4 text-sm text-muted-foreground md:flex lg:gap-6"
         >
           <Link
-            className={homeClass}
+            className={`whitespace-nowrap ${homeClass}`}
             href={homeHref}
             aria-current={isHomePage ? "page" : undefined}
           >
             {navigation.home}
           </Link>
           <Link
-            className={aboutClass}
+            className={`whitespace-nowrap ${aboutClass}`}
             href={aboutHref}
             aria-current={isAboutPage ? "page" : undefined}
           >
             {navigation.about}
           </Link>
           <Link
-            className={productsClass}
+            className={`whitespace-nowrap ${productsClass}`}
             href={productsHref}
             aria-current={isProductsPage ? "page" : undefined}
           >
             {navigation.products}
           </Link>
           <Link
-            className={contactClass}
+            className={`whitespace-nowrap ${galleryClass}`}
+            href={galleryHref}
+            aria-current={isGalleryPage ? "page" : undefined}
+          >
+            {navigation.gallery}
+          </Link>
+          <Link
+            className={`whitespace-nowrap ${contactClass}`}
             href={contactHref}
             aria-current={isContactPage ? "page" : undefined}
           >
@@ -138,6 +150,14 @@ export function SiteHeader() {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {navigation.products}
+                </Link>
+                <Link
+                  className={`rounded-lg px-3 py-2.5 ${galleryClass}`}
+                  href={galleryHref}
+                  aria-current={isGalleryPage ? "page" : undefined}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {navigation.gallery}
                 </Link>
                 <Link
                   className={`rounded-lg px-3 py-2.5 ${contactClass}`}

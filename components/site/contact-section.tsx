@@ -39,7 +39,7 @@ export function ContactSection() {
             <Phone aria-hidden="true" /> {copy.contact.call}
           </Button>
           <Button
-            render={<a href="mailto:md@asthaseeds.com" />}
+            render={<a href="mailto:info@asthaseeds.com" />}
             nativeButton={false}
             variant="outline"
             className="h-10 rounded-lg border-white/30 bg-transparent px-4 text-white hover:bg-white/10 hover:text-white"

@@ -5,7 +5,7 @@ export const contactMethodsCopy = {
       description:
         "ফোন করুন, হোয়াটসঅ্যাপে বা ইমেইলে বার্তা পাঠান—সাধারণত এক দিনের মধ্যে উত্তর দিই।",
       channelsTitle: "সরাসরি যোগাযোগ",
-      officeTitle: "ঢাকা অফিস",
+      officeTitle: "প্রধান কার্যালয়",
       address: "হাউস ১২, রোড ০৯, এইচ-ব্লক, ঢাকা ১২১৬, বাংলাদেশ",
       regionalOfficeTitle: "আঞ্চলিক অফিস",
       regionalAddress: "শানিয়াজান বাজার, হাতীবান্ধা ৫৫৩০, লালমনিরহাট, বাংলাদেশ",
@@ -14,9 +14,9 @@ export const contactMethodsCopy = {
       whatsappTitle: "হোয়াটসঅ্যাপ",
       whatsappAction: "বার্তা পাঠান",
       emailTitle: "ইমেইল",
-      email: "md@asthaseeds.com",
+      email: "info@asthaseeds.com",
       hoursTitle: "অফিস সময়",
-      hours: "রবি–বৃহস্পতিবার · সকাল ৯টা–বিকেল ৫টা",
+      hours: "শনি–বৃহস্পতিবার · সকাল ৯টা–বিকেল ৫টা",
     },
   },
   en: {
@@ -25,7 +25,7 @@ export const contactMethodsCopy = {
       description:
         "Call, message us on WhatsApp or send an email. We usually reply within one business day.",
       channelsTitle: "Reach us directly",
-      officeTitle: "Dhaka office",
+      officeTitle: "Head office",
       address: "House 12, Road 09, H-block, Dhaka 1216, Bangladesh",
       regionalOfficeTitle: "Regional office",
       regionalAddress:
@@ -35,9 +35,9 @@ export const contactMethodsCopy = {
       whatsappTitle: "WhatsApp",
       whatsappAction: "Send a message",
       emailTitle: "Email",
-      email: "md@asthaseeds.com",
+      email: "info@asthaseeds.com",
       hoursTitle: "Office hours",
-      hours: "Sunday–Thursday · 9:00 AM–5:00 PM",
+      hours: "Saturday–Thursday · 9:00 AM–5:00 PM",
     },
   },
 } as const;

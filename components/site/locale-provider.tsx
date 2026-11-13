@@ -59,6 +59,8 @@ export function SiteLocaleProvider({ children }: { children: ReactNode }) {
       ? siteMetadataCopy[locale].about.pageTitle
       : pathname === "/products"
         ? siteMetadataCopy[locale].productsPage.pageTitle
+        : pathname === "/gallery"
+          ? siteMetadataCopy[locale].galleryPage.pageTitle
         : pathname === "/contact"
           ? siteMetadataCopy[locale].contactPage.pageTitle
           : siteMetadataCopy[locale].pageTitle;
@@ -67,6 +69,8 @@ export function SiteLocaleProvider({ children }: { children: ReactNode }) {
       ? siteMetadataCopy[locale].about.metaDescription
       : pathname === "/products"
         ? siteMetadataCopy[locale].productsPage.metaDescription
+        : pathname === "/gallery"
+          ? siteMetadataCopy[locale].galleryPage.metaDescription
         : pathname === "/contact"
           ? siteMetadataCopy[locale].contactPage.metaDescription
           : siteMetadataCopy[locale].metaDescription;

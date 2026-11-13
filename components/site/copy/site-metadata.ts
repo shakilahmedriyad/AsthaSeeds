@@ -18,6 +18,11 @@ export const siteMetadataCopy = {
       metaDescription:
         "বাংলাদেশের কৃষকদের জন্য আস্থা সিডস লিমিটেডের বীজ দেখুন।",
     },
+    galleryPage: {
+      pageTitle: "গ্যালারি | আস্থা সিডস লিমিটেড",
+      metaDescription:
+        "আস্থা সিডস লিমিটেডের মাঠ পরিদর্শন ও বাংলাদেশের কৃষি কার্যক্রমের ছবি দেখুন।",
+    },
   },
   en: {
     pageTitle: "Astha Seeds Limited | Quality Agricultural Seeds for Bangladesh",
@@ -37,6 +42,11 @@ export const siteMetadataCopy = {
       pageTitle: "Our Seeds | Astha Seeds Limited",
       metaDescription:
         "Explore seeds from Astha Seeds Limited for farmers across Bangladesh.",
+    },
+    galleryPage: {
+      pageTitle: "Gallery | Astha Seeds Limited",
+      metaDescription:
+        "Explore field visits and agricultural moments from Astha Seeds Limited.",
     },
   },
 } as const;

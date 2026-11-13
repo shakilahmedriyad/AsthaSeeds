@@ -15,13 +15,13 @@ export const productCardCopy: Record<
       items: [
         {
           category: "ভুট্টা",
-          name: "ভুট্টার বীজ",
+          name: "Astha-55",
           imageSrc: "/corn.jpg",
           imageDescription: "গাছে পাকা সোনালি ভুট্টার মোচা",
         },
         {
           category: "ধান",
-          name: "ধানের বীজ",
+          name: "Astha nobanna 29",
           imageSrc: "/rice.avif",
           imageDescription: "সবুজ ধানক্ষেত ও দূরের পাহাড়",
         },
@@ -34,13 +34,13 @@ export const productCardCopy: Record<
       items: [
         {
           category: "Corn",
-          name: "Corn Seeds",
+          name: "Astha-55",
           imageSrc: "/corn.jpg",
           imageDescription: "Ripe golden corn cobs growing on the stalk",
         },
         {
           category: "Rice",
-          name: "Rice Seeds",
+          name: "Astha nobanna 29",
           imageSrc: "/rice.avif",
           imageDescription: "A green paddy field with mountains in the distance",
         },

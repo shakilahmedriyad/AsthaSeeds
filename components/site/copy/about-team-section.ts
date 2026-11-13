@@ -6,7 +6,7 @@ export const aboutTeamCopy = {
         {
           name: "হামিদুল ইসলাম",
           role: "চেয়ারম্যান",
-          image: null,
+          image: "/hamidur-profile.jpg",
           email: "ch@asthaseeds.com",
           quote:
             "একটি বীজ শুধু পণ্য নয়; এটি কৃষকের আশার শুরু এবং দেশের আরও সমৃদ্ধ ভবিষ্যতের ভিত্তি।",
@@ -21,14 +21,14 @@ export const aboutTeamCopy = {
         },
         {
           name: "সিফাত ইসলাম",
-          role: "ডিলার",
+          role: "সেলস অফিসার — রংপুর বিভাগ",
           image: null,
           email: null,
           quote: null,
         },
         {
           name: "তৌহিদুর রহমান",
-          role: "সেলস অফিসার",
+          role: "সেলস অফিসার — রাজশাহী বিভাগ",
           image: null,
           email: null,
           quote: null,
@@ -43,7 +43,7 @@ export const aboutTeamCopy = {
         {
           name: "Hamidul Islam",
           role: "Chairman",
-          image: null,
+          image: "/hamidur-profile.jpg",
           email: "ch@asthaseeds.com",
           quote:
             "A seed is more than a product; it is the beginning of a farmer's hope and a stronger future for our country.",
@@ -58,14 +58,14 @@ export const aboutTeamCopy = {
         },
         {
           name: "Sifat Islam",
-          role: "Dealer",
+          role: "Sales Officer — Rangpur Division",
           image: null,
           email: null,
           quote: null,
         },
         {
           name: "Touhidur Rahman",
-          role: "Sales Officer",
+          role: "Sales Officer — Rajshahi Division",
           image: null,
           email: null,
           quote: null,

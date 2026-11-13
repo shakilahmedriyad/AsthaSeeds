@@ -5,7 +5,7 @@ export const statsSectionCopy = {
       items: [
         { value: "২+", label: "বছরের অভিজ্ঞতা", },
         { value: "৫০০+", label: "ডিলার", },
-        { value: "১০,০০০", label: "কৃষকের কাছে পৌঁছেছি", },
+        { value: "১০,০০০+", label: "কৃষকের কাছে পৌঁছেছি", },
       ],
     },
   },
@@ -15,7 +15,7 @@ export const statsSectionCopy = {
       items: [
         { value: "2+", label: "Years of experience", },
         { value: "500+", label: "Dealers", },
-        { value: "10,000", label: "Farmers reached", },
+        { value: "10,000+", label: "Farmers reached", },
       ],
     },
   },

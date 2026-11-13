@@ -17,20 +17,6 @@ export const contactMethodsCopy = {
       email: "md@asthaseeds.com",
       hoursTitle: "অফিস সময়",
       hours: "রবি–বৃহস্পতিবার · সকাল ৯টা–বিকেল ৫টা",
-      socialsTitle: "সোশ্যাল মিডিয়ায় যুক্ত হন",
-      socialsNote: "আমাদের সোশ্যাল মিডিয়া প্রোফাইলের লিংক শিগগিরই যোগ হবে।",
-      socials: [
-        { name: "ফেসবুক", shortName: "Facebook", },
-        { name: "ইনস্টাগ্রাম", shortName: "Instagram", },
-        { name: "টেলিগ্রাম", shortName: "Telegram", },
-      ],
-    },
-    navigation: {
-      products: "আমাদের বীজ",
-    },
-    productsPage: {
-      description:
-        "বাংলাদেশের মাঠের জন্য বাছাই করা মানসম্মত ভুট্টার বীজ।",
     },
   },
   en: {
@@ -52,20 +38,6 @@ export const contactMethodsCopy = {
       email: "md@asthaseeds.com",
       hoursTitle: "Office hours",
       hours: "Sunday–Thursday · 9:00 AM–5:00 PM",
-      socialsTitle: "Find us on social media",
-      socialsNote: "Our social profile links will be added soon.",
-      socials: [
-        { name: "Facebook", shortName: "Facebook", },
-        { name: "Instagram", shortName: "Instagram", },
-        { name: "Telegram", shortName: "Telegram", },
-      ],
-    },
-    navigation: {
-      products: "Our seed",
-    },
-    productsPage: {
-      description:
-        "Quality maize seed selected for Bangladeshi fields.",
     },
   },
 } as const;

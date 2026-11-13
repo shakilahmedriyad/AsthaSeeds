@@ -11,15 +11,15 @@ const notoSansBengali = Noto_Sans_Bengali({
 });
 
 export const metadata: Metadata = {
-  title: "আস্থা সিডস লিমিটেড | বাংলাদেশের জন্য মানসম্মত কৃষিবীজ",
+  title: "Astha Seeds Limited | Quality Agricultural Seeds for Bangladesh",
   description:
-    "আস্থা সিডস লিমিটেড বাংলাদেশে মানসম্মত কৃষিবীজ ও উদ্ভাবনী কৃষি সমাধান নিয়ে কাজ করে।",
+    "Astha Seeds Limited brings quality agricultural seed varieties and innovative agricultural solutions to Bangladesh.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
-      lang="bn"
+      lang="en"
       className={cn(
         "h-full",
         "antialiased",

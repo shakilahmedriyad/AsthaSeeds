@@ -17,7 +17,11 @@ export function Brand({ light = false }: { light?: boolean }) {
       className="inline-flex min-w-0 items-center gap-2.5"
       aria-label={copy.brand.homeLabel}
     >
-      <span className="flex h-11 w-[5.5rem] shrink-0 items-center rounded-md bg-white px-1.5 py-0.5">
+      <span
+        className={`flex shrink-0 items-center rounded-md px-1.5 py-0.5 ${
+          light ? "h-20 w-40" : "h-11 w-22"
+        }`}
+      >
         <Image
           src="/AsthaSeeds.svg"
           alt=""

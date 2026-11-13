@@ -5,10 +5,19 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Design system — warm, honest Bangladeshi agri-business.
- * Leaf green primary, Astha navy accent, warm off-white paper background.
- * All colors are oklch. Register new tokens in @theme inline below.
+ * Design system — Astha Seeds.
+ * Official brand palette:
+ * Primary green: #179F49
+ * Lime green:    #7EC243
+ * Light green:   #88BF4D
+ * Navy:          #233267
+ * Text:          #231F20
+ *
+ * Warm paper background with green primary actions
+ * and navy secondary brand accents.
+ * All colors are oklch. Register new tokens in @theme inline.
  */
+
 @theme inline {
   --font-sans:
     var(--font-inter), var(--font-noto-bengali), ui-sans-serif, system-ui,
@@ -34,34 +43,44 @@
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
+
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
   --color-primary-deep: var(--primary-deep);
   --color-primary-soft: var(--primary-soft);
+
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
+
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
+
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+
   --color-brand-accent: var(--brand-accent);
   --color-brand-accent-foreground: var(--brand-accent-foreground);
   --color-brand-accent-soft: var(--brand-accent-soft);
   --color-brand-accent-on-dark: var(--brand-accent-on-dark);
+
   --color-flag-red: var(--flag-red);
   --color-whatsapp: var(--whatsapp);
   --color-whatsapp-foreground: var(--whatsapp-foreground);
+
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
+
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
   --color-ring-offset-background: var(--background);
+
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
+
   --color-sidebar: var(--sidebar);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar-primary: var(--sidebar-primary);
@@ -75,66 +94,124 @@
 :root {
   --radius: 0.75rem;
 
-  /* Paper + ink */
+  /* ---------------------------------
+     Backgrounds & typography
+  --------------------------------- */
+
   --background: oklch(0.979 0.008 91.5); /* #FAF8F2 */
-  --foreground: oklch(0.252 0 0); /* #222 */
+  --foreground: oklch(0.244 0.006 0.6); /* #231F20 */
+
   --card: oklch(0.995 0.004 91.5);
-  --card-foreground: oklch(0.252 0 0);
+  --card-foreground: oklch(0.244 0.006 0.6);
+
   --popover: oklch(0.995 0.004 91.5);
-  --popover-foreground: oklch(0.252 0 0);
+  --popover-foreground: oklch(0.244 0.006 0.6);
 
-  /* Leaf green */
-  --primary: oklch(0.434 0.089 154.5); /* #1F5F3A */
-  --primary-foreground: oklch(0.985 0.008 91.5);
-  --primary-deep: oklch(0.31 0.065 155);
-  --primary-soft: oklch(0.94 0.03 150);
+  /* ---------------------------------
+     Primary brand — Astha green
+     #179F49
+  --------------------------------- */
 
-  /* Astha navy from the brand logo */
-  --brand-accent: #233267;
-  --brand-accent-foreground: #ffffff;
-  --brand-accent-soft: #e9edf8;
-  --brand-accent-on-dark: #c7d2f2;
+  --primary: oklch(0.616 0.166 149.35);
+  --primary-foreground: oklch(0.99 0 0);
 
-  /* A touch of flag red — footer / badge only */
+  /* Darker green for hover and emphasis */
+  --primary-deep: oklch(0.518 0.135 150);
+
+  /* Soft green surfaces */
+  --primary-soft: oklch(0.96 0.035 150);
+
+  /* ---------------------------------
+     Brand accent — Astha navy
+     #233267
+  --------------------------------- */
+
+  --brand-accent: oklch(0.335 0.095 268.95);
+  --brand-accent-foreground: oklch(0.99 0 0);
+
+  --brand-accent-soft: oklch(0.946 0.015 270);
+  --brand-accent-on-dark: oklch(0.86 0.045 270);
+
+  /* ---------------------------------
+     Supporting brand greens
+  --------------------------------- */
+
+  /* Logo gradient colors:
+     #179F49 → #7EC243
+     Secondary green: #88BF4D
+  */
+
+  --brand-green: oklch(0.616 0.166 149.35);
+  --brand-green-light: oklch(0.743 0.173 133.19);
+  --brand-green-lighter: oklch(0.742 0.156 130.99);
+
+  /* ---------------------------------
+     Semantic colors
+  --------------------------------- */
+
   --flag-red: oklch(0.58 0.21 24);
 
   --whatsapp: oklch(0.6 0.15 152);
   --whatsapp-foreground: oklch(0.99 0 0);
 
-  --secondary: oklch(0.94 0.03 150);
-  --secondary-foreground: oklch(0.31 0.065 155);
+  /* Secondary surfaces */
+  --secondary: oklch(0.96 0.035 150);
+  --secondary-foreground: oklch(0.518 0.135 150);
+
   --muted: oklch(0.955 0.012 90);
   --muted-foreground: oklch(0.46 0.012 90);
-  --accent: oklch(0.94 0.03 150);
-  --accent-foreground: oklch(0.31 0.065 155);
+
+  --accent: oklch(0.946 0.015 270);
+  --accent-foreground: oklch(0.335 0.095 268.95);
+
   --destructive: oklch(0.55 0.2 27);
   --destructive-foreground: oklch(0.985 0.008 91.5);
+
+  /* Borders and focus */
   --border: oklch(0.9 0.014 92);
   --input: oklch(0.86 0.016 92);
-  --ring: oklch(0.434 0.089 154.5);
+  --ring: oklch(0.616 0.166 149.35);
+
+  /* ---------------------------------
+     Shadows
+  --------------------------------- */
 
   --shadow-soft: 0 1px 2px
     color-mix(in oklab, var(--foreground) 6%, transparent);
+
   --shadow-card:
     0 1px 2px color-mix(in oklab, var(--foreground) 5%, transparent),
     0 10px 30px -18px color-mix(in oklab, var(--primary-deep) 35%, transparent);
+
   --shadow-lift:
     0 2px 4px color-mix(in oklab, var(--foreground) 6%, transparent),
     0 18px 40px -20px color-mix(in oklab, var(--primary-deep) 45%, transparent);
 
-  --chart-1: oklch(0.434 0.089 154.5);
-  --chart-2: #233267;
-  --chart-3: oklch(0.6 0.1 150);
-  --chart-4: #c7d2f2;
-  --chart-5: oklch(0.31 0.065 155);
+  /* ---------------------------------
+     Charts
+  --------------------------------- */
+
+  --chart-1: oklch(0.616 0.166 149.35);
+  --chart-2: oklch(0.335 0.095 268.95);
+  --chart-3: oklch(0.743 0.173 133.19);
+  --chart-4: oklch(0.742 0.156 130.99);
+  --chart-5: oklch(0.518 0.135 150);
+
+  /* ---------------------------------
+     Sidebar
+  --------------------------------- */
+
   --sidebar: oklch(0.979 0.008 91.5);
-  --sidebar-foreground: oklch(0.252 0 0);
-  --sidebar-primary: oklch(0.434 0.089 154.5);
-  --sidebar-primary-foreground: oklch(0.985 0.008 91.5);
-  --sidebar-accent: oklch(0.94 0.03 150);
-  --sidebar-accent-foreground: oklch(0.31 0.065 155);
+  --sidebar-foreground: oklch(0.244 0.006 0.6);
+
+  --sidebar-primary: oklch(0.616 0.166 149.35);
+  --sidebar-primary-foreground: oklch(0.99 0 0);
+
+  --sidebar-accent: oklch(0.946 0.015 270);
+  --sidebar-accent-foreground: oklch(0.335 0.095 268.95);
+
   --sidebar-border: oklch(0.9 0.014 92);
-  --sidebar-ring: oklch(0.434 0.089 154.5);
+  --sidebar-ring: oklch(0.616 0.166 149.35);
 }
 
 @layer base {
@@ -180,7 +257,7 @@
   }
 }
 
-/* Bangla text set explicitly (e.g. the secondary hero line) */
+/* Bangla text set explicitly */
 @utility font-bn {
   font-family: var(--font-bangla);
   letter-spacing: 0;
@@ -215,8 +292,11 @@
     pointer-events: none;
     background-color: var(--motif-color, var(--primary));
     opacity: var(--motif-opacity, 0.05);
+
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cg fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round'%3E%3Cpath d='M18 160 C 44 112, 80 88, 128 78'/%3E%3Cpath d='M66 112 C 78 102, 92 97, 110 96'/%3E%3C/g%3E%3Cg fill='black'%3E%3Cellipse cx='138' cy='30' rx='4.5' ry='6.5' transform='rotate(20 138 30)'/%3E%3Cellipse cx='154' cy='44' rx='4.5' ry='6.5' transform='rotate(-15 154 44)'/%3E%3Cellipse cx='140' cy='52' rx='4' ry='6' transform='rotate(40 140 52)'/%3E%3Cellipse cx='32' cy='42' rx='4' ry='6' transform='rotate(35 32 42)'/%3E%3Cellipse cx='158' cy='150' rx='4' ry='6' transform='rotate(-30 158 150)'/%3E%3C/g%3E%3C/svg%3E");
+
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cg fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round'%3E%3Cpath d='M18 160 C 44 112, 80 88, 128 78'/%3E%3Cpath d='M66 112 C 78 102, 92 97, 110 96'/%3E%3C/g%3E%3Cg fill='black'%3E%3Cellipse cx='138' cy='30' rx='4.5' ry='6.5' transform='rotate(20 138 30)'/%3E%3Cellipse cx='154' cy='44' rx='4.5' ry='6.5' transform='rotate(-15 154 44)'/%3E%3Cellipse cx='140' cy='52' rx='4' ry='6' transform='rotate(40 140 52)'/%3E%3Cellipse cx='32' cy='42' rx='4' ry='6' transform='rotate(35 32 42)'/%3E%3Cellipse cx='158' cy='150' rx='4' ry='6' transform='rotate(-30 158 150)'/%3E%3C/g%3E%3C/svg%3E");
+
     -webkit-mask-size: 180px 180px;
     mask-size: 180px 180px;
   }
@@ -228,11 +308,13 @@
   --motif-opacity: 0.06;
 }
 
-/* Subtle, one-time reveal for homepage sections. */
+/* Subtle, one-time reveal for homepage sections */
 .reveal-pending {
   opacity: 0;
   transform: translateY(10px);
-  transition: opacity 0.45s ease, transform 0.45s ease;
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s ease;
 }
 
 .reveal-pending.is-visible {
@@ -244,6 +326,7 @@
   html {
     scroll-behavior: auto;
   }
+
   .reveal-pending {
     opacity: 1;
     transform: none;

@@ -1,7 +1,7 @@
 "use client";
 
 import { CalendarDays, Clock3, Package, Search } from "lucide-react";
-import Link from "next/link";
+import { Dialog } from "@base-ui/react/dialog";
 import { Button } from "@/components/ui/button";
 import { productCatalogCopy } from "./copy/product-catalog-section";
 import { seedProductCardCopy } from "./copy/seed-product-card";
@@ -19,12 +19,18 @@ export function SeedProductCard({ product }: { product: SeedProduct }) {
       <div
         role="img"
         aria-label={`${product.imageDescription}: ${product.name}`}
-        className="h-52 shrink-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-[1.02]"
+        className="relative h-52 shrink-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-[1.02]"
         style={{ backgroundImage: `url('${product.image}')` }}
-      />
+      >
+        <div className="absolute inset-0 bg-primary-deep/10">
+          <span className="absolute right-3 top-3 z-10 rounded-full border border-white/40 bg-primary-deep/95 px-4 py-2 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(0,0,0,0.35)]">
+            {details.comingSoon}
+          </span>
+        </div>
+      </div>
       <div className="flex flex-1 flex-col p-4">
         <div className="flex items-center gap-2 text-[0.68rem] font-semibold uppercase tracking-wide text-primary">
-          <span>{details.category}</span>
+          <span>{product.category}</span>
           <span className="rounded-full bg-brand-accent-soft px-2 py-0.5 text-brand-accent">
             {product.variety}
           </span>
@@ -77,15 +83,39 @@ export function SeedProductCard({ product }: { product: SeedProduct }) {
           </div>
         </dl>
         <div className="mt-auto grid grid-cols-2 gap-2 pt-4">
-          <Button
-            render={<Link href="/#contact" />}
-            nativeButton={false}
-            variant="outline"
-            className="h-9 rounded-lg border-primary/20 px-2 text-xs text-primary hover:bg-secondary"
-          >
-            <Search aria-hidden="true" />
-            {details.viewDetails}
-          </Button>
+          <Dialog.Root>
+            <Dialog.Trigger
+              render={
+                <Button
+                  variant="outline"
+                  className="h-9 rounded-lg border-primary/20 px-2 text-xs text-primary hover:bg-secondary"
+                />
+              }
+            >
+              <Search aria-hidden="true" />
+              {details.viewDetails}
+            </Dialog.Trigger>
+            <Dialog.Portal>
+              <Dialog.Backdrop className="fixed inset-0 z-50 bg-black/50 transition-opacity data-ending-style:opacity-0 data-starting-style:opacity-0" />
+              <Dialog.Popup className="fixed left-1/2 top-1/2 z-50 flex w-[calc(100vw-2rem)] max-w-sm -translate-x-1/2 -translate-y-1/2 flex-col gap-4 rounded-xl border border-border bg-card p-6 text-foreground shadow-xl">
+                <div>
+                  <Dialog.Title className="text-lg font-semibold">
+                    {details.comingSoon}
+                  </Dialog.Title>
+                  <Dialog.Description className="mt-2 text-sm leading-6 text-muted-foreground">
+                    {details.comingSoonMessage}
+                  </Dialog.Description>
+                </div>
+                <Dialog.Close
+                  render={
+                    <Button className="self-end" />
+                  }
+                >
+                  {details.close}
+                </Dialog.Close>
+              </Dialog.Popup>
+            </Dialog.Portal>
+          </Dialog.Root>
           <Button
             render={
               <a

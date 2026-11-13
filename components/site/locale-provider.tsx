@@ -33,11 +33,11 @@ function subscribeToLocale(onChange: () => void) {
 
 function getLocaleSnapshot(): SiteLocale {
   const savedLocale = window.localStorage.getItem(STORAGE_KEY);
-  return savedLocale === "en" ? "en" : "bn";
+  return savedLocale === "bn" ? "bn" : "en";
 }
 
 function getServerLocaleSnapshot(): SiteLocale {
-  return "bn";
+  return "en";
 }
 
 type SiteLocaleContextValue = {

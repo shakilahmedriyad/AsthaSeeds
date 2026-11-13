@@ -7,9 +7,7 @@ import {
   MapPin,
   MessageCircle,
   Phone,
-  Send,
 } from "lucide-react";
-import Link from "next/link";
 import type { ReactNode } from "react";
 import { contactMethodsCopy } from "./copy/contact-methods-section";
 import { useSiteLocale } from "./locale-provider";
@@ -58,29 +56,6 @@ export function ContactMethodsSection() {
             </a>
           </div>
 
-          <div className="mt-8 border-t border-border pt-6">
-            <h3 className="text-sm font-semibold">{contact.socialsTitle}</h3>
-            <div className="mt-3 flex flex-wrap gap-2">
-              {contact.socials.map((social, index) => {
-                return (
-                  <div
-                    key={social.shortName}
-                    className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3 py-2 text-xs font-medium text-foreground"
-                    title={contact.socialsNote}
-                  >
-                    <SocialIcon
-                      name={social.shortName}
-                      index={index}
-                    />
-                    {social.name}
-                  </div>
-                );
-              })}
-            </div>
-            <p className="mt-3 text-xs leading-5 text-muted-foreground">
-              {contact.socialsNote}
-            </p>
-          </div>
         </div>
 
         <div className="grid gap-3 sm:grid-cols-2">
@@ -144,25 +119,6 @@ export function ContactMethodsSection() {
             </p>
           </ContactCard>
 
-          <Link
-            href="/products"
-            className="group flex min-h-24 items-center justify-between rounded-xl border border-primary/10 bg-secondary/70 p-5 transition-colors hover:bg-secondary sm:col-span-2"
-          >
-            <span>
-              <span className="block text-xs font-semibold uppercase tracking-wide text-primary">
-                {copy.navigation.products}
-              </span>
-              <span className="mt-1 block text-sm text-muted-foreground">
-                {copy.productsPage.description}
-              </span>
-            </span>
-            <span
-              aria-hidden="true"
-              className="text-lg text-primary transition-transform group-hover:translate-x-1"
-            >
-              →
-            </span>
-          </Link>
         </div>
       </div>
     </section>
@@ -192,35 +148,5 @@ function ContactCard({
         <div className="mt-1.5">{children}</div>
       </div>
     </article>
-  );
-}
-
-function SocialIcon({ name, index }: { name: string; index: number }) {
-  return (
-    <span
-      className="flex size-7 items-center justify-center rounded-full bg-secondary text-primary"
-      aria-hidden="true"
-    >
-      {index === 0 ? (
-        <svg viewBox="0 0 24 24" className="size-4" fill="currentColor">
-          <path d="M13.3 21v-8.2h2.8l.4-3.2h-3.2v-2c0-.9.3-1.6 1.6-1.6h1.7V3.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.3H7.1v3.2h2.8V21h3.4Z" />
-        </svg>
-      ) : index === 1 ? (
-        <svg
-          viewBox="0 0 24 24"
-          className="size-4"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.8"
-        >
-          <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
-          <circle cx="12" cy="12" r="4" />
-          <circle cx="17.6" cy="6.8" r="1" fill="currentColor" stroke="none" />
-        </svg>
-      ) : (
-        <Send className="size-4" />
-      )}
-      <span className="sr-only">{name}</span>
-    </span>
   );
 }

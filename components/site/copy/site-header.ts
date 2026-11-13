@@ -7,6 +7,8 @@ export const siteHeaderCopy = {
       products: "আমাদের বীজ",
       contact: "যোগাযোগ",
       getInTouch: "কথা বলুন",
+      openMenu: "মেনু খুলুন",
+      closeMenu: "মেনু বন্ধ করুন",
     },
   },
   en: {
@@ -17,6 +19,8 @@ export const siteHeaderCopy = {
       products: "Our seed",
       contact: "Contact",
       getInTouch: "Get in touch",
+      openMenu: "Open menu",
+      closeMenu: "Close menu",
     },
   },
 } as const;

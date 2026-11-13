@@ -1,7 +1,7 @@
 export const productCatalogCopy = {
   bn: {
     productsPage: {
-      category: "ভুট্টা",
+      category: "বীজ",
       title: "আমাদের বীজ",
       seedCount: (count: number) => `${count.toLocaleString("bn-BD")}টি বীজ`,
       searchLabel: "বীজ খুঁজুন",
@@ -11,32 +11,32 @@ export const productCatalogCopy = {
       products: [
         {
           name: "আস্থা মেইজ গোল্ড ১০১",
+          category: "ভুট্টা",
           variety: "হাইব্রিড",
           description: "উজ্জ্বল হলুদ, বড় ও দানায় ভরা মোচা।",
           season: "রবি",
           maturity: "১৪০–১৫০ দিন",
-          pack: "১, ৫, ১০, ২০ কেজি",
+          pack: "১ কেজি",
           imageDescription: "তাজা ভুট্টার মোচা",
-          image:
-            "https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=800&q=85",
+          image: "/corn.jpg",
         },
         {
-          name: "আস্থা মেইজ সুপার ২০২",
+          name: "আস্থা ধানের বীজ",
+          category: "ধান",
           variety: "হাইব্রিড",
-          description: "রবি ও খরিফ-১ মৌসুমে চাষের উপযোগী।",
-          season: "রবি, খরিফ-১",
+          description: "বাংলাদেশের কৃষকদের জন্য মানসম্মত ধানের বীজ।",
+          season: "রবি",
           maturity: "১৩৫–১৪৫ দিন",
-          pack: "১, ২, ৫, ১০ কেজি",
-          imageDescription: "চাষের উপযোগী ফসলের মাঠ",
-          image:
-            "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=85",
+          pack: "১ কেজি",
+          imageDescription: "সবুজ ধানক্ষেত",
+          image: "/rice.avif",
         },
       ],
     },
   },
   en: {
     productsPage: {
-      category: "Maize",
+      category: "Seeds",
       title: "Our Seeds",
       seedCount: (count: number) => `${count} seeds`,
       searchLabel: "Search seeds",
@@ -46,25 +46,25 @@ export const productCatalogCopy = {
       products: [
         {
           name: "Astha Maize Gold 101",
+          category: "Corn",
           variety: "Hybrid",
           description: "Big, well-filled cobs with bright golden-yellow grain.",
           season: "Rabi",
           maturity: "140–150 days",
-          pack: "1, 5, 10, 20 kg",
+          pack: "1 kg",
           imageDescription: "Fresh maize cobs",
-          image:
-            "https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=800&q=85",
+          image: "/corn.jpg",
         },
         {
-          name: "Astha Maize Super 202",
+          name: "Astha Rice Seeds",
+          category: "Rice",
           variety: "Hybrid",
-          description: "A dependable choice for Rabi and Kharif-1 seasons.",
-          season: "Rabi, Kharif-1",
+          description: "Quality rice seed for farmers across Bangladesh.",
+          season: "Rabi",
           maturity: "135–145 days",
-          pack: "1, 2, 5, 10 kg",
-          imageDescription: "Golden crop field",
-          image:
-            "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=85",
+          pack: "1 kg",
+          imageDescription: "Green rice paddy field",
+          image: "/rice.avif",
         },
       ],
     },

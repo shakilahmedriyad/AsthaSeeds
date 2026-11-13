@@ -2,15 +2,15 @@
 
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { ProductCard } from "./product-card";
+import { SeedProductCard } from "./seed-product-card";
 import { productsSectionCopy } from "./copy/products-section";
-import { productCardCopy } from "./copy/product-card";
+import { productCatalogCopy } from "./copy/product-catalog-section";
 import { useSiteLocale } from "./locale-provider";
 
 export function ProductsSection() {
   const { locale } = useSiteLocale();
   const copy = productsSectionCopy[locale];
-  const products = productCardCopy[locale].products;
+  const products = productCatalogCopy[locale].productsPage.products;
 
   return (
     <section
@@ -43,12 +43,8 @@ export function ProductsSection() {
           </Link>
         </div>
         <div className="mt-8 grid gap-5 sm:grid-cols-2">
-          {products.items.map((product) => (
-            <ProductCard
-              key={product.category}
-              product={product}
-              comingSoonLabel={products.comingSoon}
-            />
+          {products.map((product) => (
+            <SeedProductCard key={product.name} product={product} />
           ))}
         </div>
       </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { MapPin, Phone, Truck, UsersRound } from "lucide-react";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Brand } from "./brand";
 import { siteFooterCopy } from "./copy/site-footer";
@@ -27,30 +28,24 @@ export function SiteFooter() {
           </h2>
           <ul className="mt-4 space-y-2.5 text-sm text-white/70">
             <li>
-              <a className="hover:text-white" href={isHomePage ? "#home" : "/"}>
+              <Link className="hover:text-white" href={isHomePage ? "#home" : "/"}>
                 {copy.navigation.home}
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="hover:text-white" href="/about">
+              <Link className="hover:text-white" href="/about">
                 {copy.navigation.about}
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                className="hover:text-white"
-                href="/products"
-              >
+              <Link className="hover:text-white" href="/products">
                 {copy.navigation.products}
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                className="hover:text-white"
-                href="/contact"
-              >
+              <Link className="hover:text-white" href="/contact">
                 {copy.navigation.contact}
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

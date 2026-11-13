@@ -15,7 +15,7 @@ export default function ContactPage() {
   return (
     <SiteLocaleProvider>
       <SiteHeader />
-      <main>
+      <main className="flex-1">
         <ContactPageIntro />
         <ContactMethodsSection />
       </main>

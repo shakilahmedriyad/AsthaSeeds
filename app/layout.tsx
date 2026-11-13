@@ -28,7 +28,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         notoSansBengali.variable,
       )}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="flex min-h-dvh flex-col">{children}</body>
     </html>
   );
 }

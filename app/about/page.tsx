@@ -16,7 +16,7 @@ export default function AboutPage() {
   return (
     <SiteLocaleProvider>
       <SiteHeader />
-      <main>
+      <main className="flex-1">
         <AboutIntroSection />
         <AboutStorySection />
         <AboutTeamSection />

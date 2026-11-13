@@ -16,7 +16,7 @@ export default function ProductsPage() {
   return (
     <SiteLocaleProvider>
       <SiteHeader />
-      <main>
+      <main className="flex-1">
         <ProductsPageIntro />
         <ProductCatalogSection />
         <ContactSection />

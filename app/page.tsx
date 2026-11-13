@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <SiteLocaleProvider>
       <SiteHeader />
-      <main>
+      <main className="flex-1">
         <HeroSection />
         <Reveal>
           <StatsSection />

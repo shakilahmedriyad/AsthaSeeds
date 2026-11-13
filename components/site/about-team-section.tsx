@@ -30,14 +30,14 @@ export function AboutTeamSection() {
               key={member.name}
               className="mx-auto grid w-full max-w-3xl gap-5 rounded-xl border border-border/80 bg-card p-5 shadow-card sm:grid-cols-[140px_1fr_2fr] sm:items-center sm:gap-8 sm:p-6"
             >
-              <div className="relative mx-auto aspect-square w-full max-w-35 overflow-hidden rounded-xl bg-secondary sm:mx-0">
+              <div className="relative mx-auto aspect-square w-full max-w-35 overflow-hidden rounded-2xl bg-secondary sm:mx-0">
                 {member.image ? (
                   <Image
                     src={member.image}
                     alt={member.name}
                     fill
                     sizes="(max-width: 640px) 100vw, 140px"
-                    className="object-cover"
+                    className="rounded-2xl object-cover"
                   />
                 ) : (
                   <CircleUserRound

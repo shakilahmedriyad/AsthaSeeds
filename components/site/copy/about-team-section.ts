@@ -21,14 +21,14 @@ export const aboutTeamCopy = {
         },
         {
           name: "সিফাত ইসলাম",
-          role: "সেলস অফিসার — রংপুর বিভাগ",
+          role: "সেলস অফিসার, রংপুর বিভাগ",
           image: null,
           email: null,
           quote: null,
         },
         {
           name: "তৌহিদুর রহমান",
-          role: "সেলস অফিসার — রাজশাহী বিভাগ",
+          role: "সেলস অফিসার, রাজশাহী বিভাগ",
           image: null,
           email: null,
           quote: null,
@@ -58,14 +58,14 @@ export const aboutTeamCopy = {
         },
         {
           name: "Sifat Islam",
-          role: "Sales Officer — Rangpur Division",
+          role: "Sales Officer, Rangpur Division",
           image: null,
           email: null,
           quote: null,
         },
         {
           name: "Touhidur Rahman",
-          role: "Sales Officer — Rajshahi Division",
+          role: "Sales Officer, Rajshahi Division",
           image: null,
           email: null,
           quote: null,
